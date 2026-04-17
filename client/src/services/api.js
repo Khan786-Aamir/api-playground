@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'https://api-playground-backend-9mi1.onrender.com/api',
+  baseURL: 'https://api-playground-backend-9mi1.onrender.com',
 });
 
 // Attach JWT to every request
