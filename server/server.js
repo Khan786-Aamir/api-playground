@@ -8,7 +8,12 @@ connectDB();
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://api-playground-frontend-z3m3.onrender.com',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}));
+
 app.use(express.json());
 
 app.use('/api/auth', require('./routes/auth'));
